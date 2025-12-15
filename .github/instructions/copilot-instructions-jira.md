@@ -21,6 +21,12 @@ Use these instructions whenever the user asks to review, fix, or write a Jira Ep
 4. Update the Jira issue description.
 	- If editing is blocked, post the corrected full description as a comment.
 
+If the user asks to update Stories under the Epic:
+
+1. List the Epic’s child Stories.
+2. For each Story, enforce the Story description structure (below).
+3. Keep Story DoD short and testable.
+
 ## Writing Rules
 
 - Keep the same headings and ordering (do not add sections unless the user asks).
@@ -78,6 +84,22 @@ Out of scope:
 This epic is considered complete when:
 
 1. …
+2. …
+3. …
+
+## Jira Story Description Template (Markdown)
+
+Use this for each Story under the Epic unless the user specifies a different structure.
+
+### Description
+
+- What needs to be implemented/changed?
+- Inputs/outputs (as applicable).
+- Constraints and non-goals (optional, brief).
+
+### Definition of Done
+
+1. … (objective, verifiable)
 2. …
 3. …
 
