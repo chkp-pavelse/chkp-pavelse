@@ -23,9 +23,18 @@ Use these instructions whenever the user asks to review, fix, or write a Jira Ep
 
 If the user asks to update Stories under the Epic:
 
-1. List the Epic’s child Stories.
-2. For each Story, enforce the Story description structure (below).
-3. Keep Story DoD short and testable.
+1. Fetch the Epic’s current description and extract the “Sprint-Based Delivery” bullets.
+2. Draft a Story breakdown proposal that maps those bullets into Stories.
+	- Story summaries must be numbered in sequence and start with a verb, e.g. “1. Define …”, “2. Implement …”.
+	- Assign Story Points per Story (1–5) and ensure the sprint total matches the user’s target (e.g., 8 points).
+3. Present the proposed Stories (titles + points + Description/DoD) for review.
+4. Only after the user approves the breakdown, create/update the Stories in Jira and link them to the Epic.
+5. For each Story, enforce the Story description structure (below) and keep DoD short and testable.
+
+If Story creation is blocked by Jira required fields:
+
+- Prefer copying required field values from the parent Epic when appropriate.
+- Otherwise ask the user for the minimal missing field values before creating Stories.
 
 ## Writing Rules
 
@@ -89,7 +98,8 @@ This epic is considered complete when:
 
 ## Jira Story Description Template (Markdown)
 
-Use this for each Story under the Epic unless the user specifies a different structure.
+Use this for each Story under the Epic unless the user specifies a different structure. The Story name must start with a number in sequence of stories for the epic and should be descriptive: 1. Do..., or 1. Create..., 1. Adjust..., 1. Research..., 1. Onboard..., or so.
+
 
 ### Description
 
